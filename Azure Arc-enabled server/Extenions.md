@@ -14,14 +14,10 @@ VM extensions can be managed using the following methods on your hybrid machines
 | Extension | Description |
 | --- | --- |
 | Windows Patch Extension | The WindowsPatchExtension is used for the Assessment between Azure Arc and the onboarded Servers. The Extension can find out if Updates are required on the Servers or send Azure the status of the updates | 
+| Windows OS Update Extension | The WindowsOSPatchExtension protocolls the installation activity on the Server. If Updates are installed from Azure Arc Update Management Center the log save the prcess the status of the installation. Also the Log protocolls the status of the installed Extensions. |
 
 
-## Troubleshoot Azure Arc-enabled servers VM extension issues on Windows Server
 
-| Log File | Description | Server Location | OS | 
-| --- | --- | --- | --- | 
-| Guest Agent Log | Installation and Updating of the Extensions | %SystemDrive%\ProgramData\GuestConfig\ext_mgr_logs | Windows | 
-| Detailed Extensio Log | All installed Extensions on the Server have stored here the Logs | %SystemDrive%\ProgramData\GuestConfig\extension_logs\ | Windows |
 
 
 

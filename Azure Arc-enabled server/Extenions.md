@@ -11,10 +11,10 @@ VM extensions can be managed using the following methods on your hybrid machines
 
 ## Azure Arc-enabeld servers extensions 
 
-| Extension | Description |
-| --- | --- |
-| Windows Patch Extension | The WindowsPatchExtension is used for the Assessment between Azure Arc and the onboarded Servers. The Extension can find out if Updates are required on the Servers or send Azure the status of the updates | 
-| Windows OS Update Extension | The WindowsOSPatchExtension protocolls the installation activity on the Server. If Updates are installed from Azure Arc Update Management Center the log save the prcess the status of the installation. Also the Log protocolls the status of the installed Extensions. |
+| Extension | Description | Stored Location Log File | 
+| --------- | --------- | --------- |
+| Windows Patch Extension | The WindowsPatchExtension is used for the Assessment between Azure Arc and the onboarded Servers. The Extension can find out if Updates are required on the Servers or send Azure the status of the updates | C:\ProgramData\GuestConfig\extension_logs\Microsoft.CPlat.Core.WindowsPatchExtension
+| Windows OS Update Extension | The WindowsOSPatchExtension protocolls the installation activity on the Server. If Updates are installed from Azure Arc Update Management Center the log save the prcess the status of the installation. Also the Log protocolls the status of the installed Extensions. | C:\ProgramData\GuestConfig\extension_logs\Microsoft.SoftwareUpdateManagement.WindowsOsUpdateExtension
 
 
 

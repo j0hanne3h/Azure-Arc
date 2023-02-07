@@ -1,4 +1,4 @@
-### Onboarding Sevrers to Azure Arc
+### Onboarding Servers to Azure Arc
 Azure Arc onboarding is required for on-premises machines.
 On-Premise Servers can be onboard to Azure Arc from Azure Portal by using a PowerShell Script. There are different PowerShell Script Options for onboarding 
 Servers to Azure Arc
@@ -6,7 +6,18 @@ Servers to Azure Arc
 | Options | Details | Prerequisits
 | --- | --- | --- |
 | Add a single Server | generate a script which runs locally on the targeted system | HTTPS Access to Azure Services and local administrator permissions| 
-| Add multiple Server | add multiple server to azure arc by using an service principal Account | HTTPS Access to Azure Services & local admin permissions & Service Principal Account needs the 'Azure Connected Machine Onboarding Role' |
+| Add multiple Server | add multiple server to azure arc by using an service principal Account | HTTPS Access to Azure Services & local admin permissions & Service Principal Account needs the 'Azure Connected Machine Onboarding Role'|
+
+### Using an Service Principal Account 
+<h6>(https://learn.microsoft.com/en-us/azure/azure-arc/servers/onboard-service-principal)</h6>
+
+Using an Service Principal Account is safer than using an higher privileged Account like Tenant Administrator. **The Service Principal is used only during onboarding;
+it is not used for any other purpose.**
+
+To create Service Principal Account, your Azure Directory Tenant must allow user to register applications. If it does not, your account must be a member of the Application Administrator or Cloud Application Administrator role.
+To assign Arc-enabled server roles, your Account must be Member of the owner or user Access Administrator role in the subscription that you want to use for onboarding 
+
+
 
 ### Prerequisits Azure Arc 
 The following Windows Opearting Systems are supported for Azure Connected machines.
@@ -24,7 +35,6 @@ The following Windows Opearting Systems are supported for Azure Connected machin
   - Microsoft.HybridCompute
   - Microsfot.GuestConfiguration
   - Microsft.HybridConnectivity
-
 
 
 ### Guest Configuration Extension 

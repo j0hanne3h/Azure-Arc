@@ -25,6 +25,9 @@ To assign Arc-enabled server roles, your Account must be Member of the owner or 
 ## Connect Windows Azure Virtual Machine to Azure Arc 
 <h6>https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/azure/azure_arm_template_win/#deploy-a-windows-azure-virtual-machine-and-connect-it-to-azure-arc-using-an-arm-template</h6>
 
+Important:
+The Connected Machine agent cannot be installed on an Azure virtual machine. The install script will warn you and roll back if it detects the server is running in Azure.
+
 You have multiple options for deploying and configuring Win Azure VM's to Azure Arc:
 - Azure Portal
 - ARM template vai Azure CLI

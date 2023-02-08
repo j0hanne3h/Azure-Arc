@@ -50,3 +50,4 @@ the sensor on the machine
 - Supported Windows versions (Windows 7 SP1 Pro or higher) 
 - Hardware requirements ( Core: 2 min, min 1GB Memory) 
 
+You will need to deploy the Log Analytics Agent on the target machine. The agent is beeing deployed using the VM extenison platform. Once the Log Analytics agent is installed and connected to a Workspace used by Microsoft Defender for Server, the machine is ready.

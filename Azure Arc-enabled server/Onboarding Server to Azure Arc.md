@@ -4,6 +4,22 @@
 Install or Update Azure CLI to version 2.42.0 or above (https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
 Use the command 'az --version' to check current installed version
 
+The following Windows Opearting Systems are supported for Azure Connected machines.
+
+**OS:**
+- Windows Server 2008 R2 SP1
+- Windwos Server 2012 R2
+- Windows Server 2016
+- Windows Server 2019
+- Windows Server 2022
+
+**Azure Subscriptions:**
+- Limit of 5.000 machines for each ressource Group
+- Resource providers enabled 
+  - Microsoft.HybridCompute
+  - Microsfot.GuestConfiguration
+  - Microsft.HybridConnectivity
+
 Azure Arc onboarding is required for on-premises machines.
 On-Premise Servers can be onboard to Azure Arc from Azure Portal by using a PowerShell Script. There are different PowerShell Script Options for onboarding 
 Servers to Azure Arc

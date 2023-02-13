@@ -1,5 +1,9 @@
-### Prerequisits Azure Arc 
+## Prerequisits Azure Arc 
 The following Windows Opearting Systems are supported for Azure Connected machines.
+
+**Minimun Machine requirements:**
+- Supported Windows versions (Windows 7 SP1 Pro or higher) 
+- Hardware requirements ( Core: 2 min, min 1GB Memory) 
 
 **OS:**
 - Windows Server 2008 R2 SP1
@@ -14,6 +18,8 @@ The following Windows Opearting Systems are supported for Azure Connected machin
   - Microsoft.HybridCompute
   - Microsfot.GuestConfiguration
   - Microsft.HybridConnectivity
+
+You will need to deploy the Log Analytics Agent on the target machine. The agent is beeing deployed using the VM extenison platform. Once the Log Analytics agent is installed and connected to a Workspace used by Microsoft Defender for Server, the machine is ready.
 
 ### Required Agents for Defender for Cloud
 | Feature | Log Analytics Agent | AMA |
@@ -30,12 +36,6 @@ The following Windows Opearting Systems are supported for Azure Connected machin
 - Azure Arc-enabled Servers and the Guest Configuration Extension are free. Guest Configuration Ploicies on Azure Arc servers outside the scope of Defender for Cloud are not priceless
 
 ### Defender for Endpoint Extensions 
-When you enable Defender for Server, Defender for Cloud automatically deploys a Defender for Endpoint Extension. This extenison runs a script on the server wihich installs 
-the sensor on the machine
+When you enable Defender for Servers Plan 1, Defender for Cloud automatically deploys a Defender for Endpoint Extension. This extenison runs a script on the server which installs the sensor on the machine
 - Windows machine extension: MDE.Windows
 
-**Minimun Machine requirements:**
-- Supported Windows versions (Windows 7 SP1 Pro or higher) 
-- Hardware requirements ( Core: 2 min, min 1GB Memory) 
-
-You will need to deploy the Log Analytics Agent on the target machine. The agent is beeing deployed using the VM extenison platform. Once the Log Analytics agent is installed and connected to a Workspace used by Microsoft Defender for Server, the machine is ready.
